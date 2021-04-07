@@ -12,8 +12,14 @@ bam files from the lower machine and the reference genome were first aligned usi
 
 `pbmm2 align [options] <ref.fa|xml|mmi> <in.bam|xml|fa|fq> [out.aligned.bam|xml]`
 
+
 Please refer to https://github.com/PacificBiosciences/pbmm2 ，
-The sequences of interest are then called from the alignment file using the kinetics tool(please refer to https://github.com/PacificBiosciences/kineticsTools) and the result is written to a csv file from which the desired sequences are extracted written to a fasta file.
+The sequences of interest are then called from the alignment file using the kinetics tool
+
+
+`ipdSummary aligned.bam --reference ref.fasta --identify m6A,m4C --gff basemods.gff`
+
+(please refer to https://github.com/PacificBiosciences/kineticsTools) and the result is written to a csv file from which the desired sequences are extracted written to a fasta file.
 If a site is known and needs to be verified as a methylated site, extract a sequence with a total length of 41 BP each 20bp up - and downstream of the site, write to a fasta file.
 
 ### 1.2 Nanopore-Pretreatment
