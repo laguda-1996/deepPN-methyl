@@ -9,6 +9,7 @@ Python3.7 pysam>=0.15 biopython>=1.78 pandas>=0.24 numpy>=1.18 sklearn>=0.22 pyt
 ### 1.1 Pacbio-Pretreatment
 bam files from the lower machine and the reference genome were first aligned using pbmm2 alignment software.
 `pbmm2 index [options] <ref.fa|xml> <out.mmi>`
+
 `pbmm2 align [options] <ref.fa|xml|mmi> <in.bam|xml|fa|fq> [out.aligned.bam|xml]`
 
 Please refer to https://github.com/PacificBiosciences/pbmm2 ，
