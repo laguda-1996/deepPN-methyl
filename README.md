@@ -4,6 +4,9 @@ We have developed a tool that can predict the methylation of m6A from the sequen
 # Depetency
 Python3.7 pysam>=0.15 biopython>=1.78 pandas>=0.24 numpy>=1.18 sklearn>=0.22 pytorch>=1.5  
 
+Note: only CUDA is supported at present
+
+The pre training model is in the network disk, please download it by yourself
 链接：https://pan.baidu.com/s/1hRof76lXcGYzX7JPU_UEAA 
 提取码：1234 
 
